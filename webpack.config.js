@@ -6,11 +6,15 @@ var src_dir = path.resolve(__dirname, 'src/');
 var dist_dir = path.resolve(__dirname, 'dist/');
 
 var config = {
-	entry: __dirname + '/src/index.js',
+	entry: [
+		__dirname + '/src/index.js',
+		'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server'
+        ],
 
 	output: {
 		path: dist_dir,
-		publicPath: '/',
+		publicPath: '/static/',
 		filename: 'bundle.js'
 	},
 
@@ -50,6 +54,7 @@ var config = {
 		inline: true,
 		hot: true,
 		contentBase: './'
+		
 	}
 	
 };
