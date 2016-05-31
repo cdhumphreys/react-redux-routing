@@ -15,9 +15,10 @@ import Single from './components/Single.js';
 const routes = (
 	<Router history={browserHistory}>
 		<Route path="/" component={Main}>
-			<IndexRoute component={PhotoGrid}></IndexRoute>			
+			<IndexRoute component={PhotoGrid}></IndexRoute>
+			<Route path="view/:postID" component={Single}></Route>			
 		</Route>
-		<Route path="/view/:photoID" component={Single}></Route>
+		
 	</Router>	
 );
 ReactDOM.render(routes, document.getElementById('app'));
