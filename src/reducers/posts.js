@@ -1,12 +1,6 @@
-function posts(store = [], action) {
-	switch (action.type) {
-		case 'ADD_POST':
-			// add photo & caption, initialise likes & comment section?
-			break;
-		default:
-			// no action defined
-			break;
-	}
+function posts(state = [], action) {
+	console.log('posts updated');
+	return state;
 }
 
 export default posts;

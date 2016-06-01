@@ -1,14 +1,6 @@
-function comments(store = [], action) {
-	switch (action.type) {
-		case 'ADD_COMMENT':
-			// add comment
-			break;
-		case 'REMOVE_COMMENT':
-			// delete comment
-			break;
-		default:
-			// no action defined
-			break;
+function comments(state = [], action) {
+	console.log('comments updated');
+	return state;
 }
 
 export default comments;

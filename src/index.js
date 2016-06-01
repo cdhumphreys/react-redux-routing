@@ -10,7 +10,7 @@ import css from './stylesheet.scss';
 
 
 // import components
-import Main from './components/Main.js';
+import App from './components/App.js';
 import PhotoGrid from './components/PhotoGrid.js';
 import Single from './components/Single.js';
 
@@ -21,7 +21,7 @@ import store, { history } from './store.js';
 const routes = (
 	<Provider store={store}>
 		<Router history={history}>
-			<Route path="/" component={Main}>
+			<Route path="/" component={App}>
 				<IndexRoute component={PhotoGrid}></IndexRoute>
 				<Route path="view/:postID" component={Single}></Route>			
 			</Route>		
