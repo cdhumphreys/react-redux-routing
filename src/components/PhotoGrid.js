@@ -5,11 +5,11 @@ class PhotoGrid extends React.Component {
 		return(
 			<div className="reddy"> 
 				{this.props.posts.map((post, index) => {
-					return <Photo key={index} index={index} post={post}/>
+					return <Photo key={index} index={index} post={post} {...this.props}/>
 				})}
 			</div>
 		)
-	}
+	} 
 }
 
 export default PhotoGrid;
