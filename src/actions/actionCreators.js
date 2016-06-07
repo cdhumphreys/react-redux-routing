@@ -5,19 +5,19 @@ export function incrementLikes(index) {
 	}
 }
 
-export function addComment(postId, author, comment) {
+export function addComment(postID, author, comment) {
 	return {
 		type: "ADD_COMMENT",
-		postId,
+		postID,
 		author,
 		comment
 	}
 }
 
-export function removeComment(postId, index) {
+export function removeComment(postID, index) {
 	return {
 		type: 'REMOVE_COMMENT',
-		postId,
+		postID,
 		index
 	}
 }
